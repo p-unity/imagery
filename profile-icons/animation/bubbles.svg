@@ -1,0 +1,371 @@
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<style>
+.bubbles circle {
+  stroke: #8422f4;
+  fill: none;
+}
+.bubbles > g > g:nth-of-type(3n) circle {
+  stroke: #7c4efd;
+}
+.bubbles > g > g:nth-of-type(4n) circle {
+  stroke: #a688fc;
+}
+
+.bubbles-large {
+  overflow: visible;
+}
+.bubbles-large > g {
+  -webkit-transform: translateY(390px);
+          transform: translateY(390px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bubbles-large g:nth-of-type(1) {
+  -webkit-animation: up 6.5s infinite;
+          animation: up 6.5s infinite;
+}
+.bubbles-large g:nth-of-type(1) g {
+  -webkit-transform: translateX(68px);
+          transform: translateX(68px);
+}
+.bubbles-large g:nth-of-type(1) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(2) {
+  -webkit-animation: up 5.25s 250ms infinite;
+          animation: up 5.25s 250ms infinite;
+}
+.bubbles-large g:nth-of-type(2) g {
+  -webkit-transform: translateX(88px);
+          transform: translateX(88px);
+}
+.bubbles-large g:nth-of-type(2) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(3) {
+  -webkit-animation: up 6s 750ms infinite;
+          animation: up 6s 750ms infinite;
+}
+.bubbles-large g:nth-of-type(3) g {
+  -webkit-transform: translateX(136px);
+          transform: translateX(136px);
+}
+.bubbles-large g:nth-of-type(3) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(4) {
+  -webkit-animation: up 5.5s 1.5s infinite;
+          animation: up 5.5s 1.5s infinite;
+}
+.bubbles-large g:nth-of-type(4) g {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+.bubbles-large g:nth-of-type(4) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-large g:nth-of-type(5) {
+  -webkit-animation: up 6.5s 4s infinite;
+          animation: up 6.5s 4s infinite;
+}
+.bubbles-large g:nth-of-type(5) g {
+  -webkit-transform: translateX(132px);
+          transform: translateX(132px);
+}
+.bubbles-large g:nth-of-type(5) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-small {
+  overflow: visible;
+}
+.bubbles-small > g {
+  -webkit-transform: translateY(132px);
+          transform: translateY(132px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bubbles-small g circle {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.bubbles-small g:nth-of-type(1) {
+  -webkit-animation: up 5.25s infinite;
+          animation: up 5.25s infinite;
+}
+.bubbles-small g:nth-of-type(1) g {
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(1) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(2) {
+  -webkit-animation: up 5.75s infinite;
+          animation: up 5.75s infinite;
+}
+.bubbles-small g:nth-of-type(2) g {
+  -webkit-transform: translateX(146px);
+          transform: translateX(146px);
+}
+.bubbles-small g:nth-of-type(2) circle {
+  -webkit-animation: wobble 3s infinite ease-in-out;
+          animation: wobble 3s infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(3) {
+  -webkit-animation: up 5.25s 250ms infinite;
+          animation: up 5.25s 250ms infinite;
+}
+.bubbles-small g:nth-of-type(3) g {
+  -webkit-transform: translateX(68px);
+          transform: translateX(68px);
+}
+.bubbles-small g:nth-of-type(3) circle {
+  -webkit-animation: wobble 3s 250ms infinite ease-in-out;
+          animation: wobble 3s 250ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(4) {
+  -webkit-animation: up 5.75s 325ms infinite;
+          animation: up 5.75s 325ms infinite;
+}
+.bubbles-small g:nth-of-type(4) g {
+  -webkit-transform: translateX(180px);
+          transform: translateX(180px);
+}
+.bubbles-small g:nth-of-type(4) circle {
+  -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+          animation: wobble 3s 325ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(5) {
+  -webkit-animation: up 6s 125ms infinite;
+          animation: up 6s 125ms infinite;
+}
+.bubbles-small g:nth-of-type(5) g {
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+.bubbles-small g:nth-of-type(5) circle {
+  -webkit-animation: wobble 3s 250ms infinite ease-in-out;
+          animation: wobble 3s 250ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(6) {
+  -webkit-animation: up 5.13s 250ms infinite;
+          animation: up 5.13s 250ms infinite;
+}
+.bubbles-small g:nth-of-type(6) g {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
+}
+.bubbles-small g:nth-of-type(6) circle {
+  -webkit-animation: wobble 3s 125ms infinite ease-in-out;
+          animation: wobble 3s 125ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(7) {
+  -webkit-animation: up 6.25s 350ms infinite;
+          animation: up 6.25s 350ms infinite;
+}
+.bubbles-small g:nth-of-type(7) g {
+  -webkit-transform: translateX(94px);
+          transform: translateX(94px);
+}
+.bubbles-small g:nth-of-type(7) circle {
+  -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+          animation: wobble 3s 325ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(8) {
+  -webkit-animation: up 7s 200ms infinite;
+          animation: up 7s 200ms infinite;
+}
+.bubbles-small g:nth-of-type(8) g {
+  -webkit-transform: translateX(64px);
+          transform: translateX(64px);
+}
+.bubbles-small g:nth-of-type(8) circle {
+  -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+          animation: wobble 3s 325ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(9) {
+  -webkit-animation: up 6.25s 233ms infinite;
+          animation: up 6.25s 233ms infinite;
+}
+.bubbles-small g:nth-of-type(9) g {
+  -webkit-transform: translateX(45px);
+          transform: translateX(45px);
+}
+.bubbles-small g:nth-of-type(9) circle {
+  -webkit-animation: wobble 3s 275ms infinite ease-in-out;
+          animation: wobble 3s 275ms infinite ease-in-out;
+}
+.bubbles-small g:nth-of-type(10) {
+  -webkit-animation: up 6s 900ms infinite;
+          animation: up 6s 900ms infinite;
+}
+.bubbles-small g:nth-of-type(10) g {
+  -webkit-transform: translateX(142px);
+          transform: translateX(142px);
+}
+.bubbles-small g:nth-of-type(10) circle {
+  -webkit-animation: wobble 2s 905ms infinite ease-in-out;
+          animation: wobble 2s 905ms infinite ease-in-out;
+}
+
+@-webkit-keyframes wobble {
+  33% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  66% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@keyframes wobble {
+  33% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  66% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+</style>
+
+<g class="bubbles">
+<g class="bubbles-large" stroke-width="7">
+	<g>
+		<g transform="translate(10 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(373 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(408 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(621 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(179 940)">
+			<circle cx="35" cy="35" r="35"/>
+		</g>
+	</g>
+</g>
+
+<g class="bubbles-small" stroke-width="4">
+	<g>
+		<g transform="translate(147 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(255 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(573 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(429 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(91 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(640 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(321 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(376 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(376 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+	<g>
+		<g transform="translate(497 984)">
+			<circle cx="15" cy="15" r="15"/>
+		</g>
+	</g>
+</g>
+</g>
+<g id="fade" transform="translate(10 10) scale(0.9)">
+
+  
+  <defs id="defs66351"/>
+  <linearGradient id="3d_gradient2-logo-11ee6763-d95f-4fbd-9fe3-395525a7d8fe" x1="30%" y1="120%" x2="-10%" y2="30%" spreadMethod="pad">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" id="stop66328"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="1" id="stop66330"/>
+  </linearGradient>
+  <linearGradient id="3d_gradient3-logo-11ee6763-d95f-4fbd-9fe3-395525a7d8fe" x1="30%" y1="120%" x2="-10%" y2="30%" spreadMethod="pad" gradientTransform="rotate(-30)">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" id="stop66333"/>
+    <stop offset="50%" stop-color="#cccccc" stop-opacity="1" id="stop66335"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="1" id="stop66337"/>
+  </linearGradient>
+  <rect style="font-style:normal;font-weight:normal;font-size:medium;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle;fill:#7c4efd;stroke:#7c4efd;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" id="rect11" stroke-miterlimit="2" height="118.1847" width="26.281931" class="c3" y="41.815296" x="56.115856"/>
+  <path style="font-style:normal;font-weight:normal;font-size:medium;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle;fill:#3b2f4e;stroke:#3b2f4e;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" id="path13" stroke-miterlimit="2" d="m 99.99998,127.76589 c -24.198323,0 -43.884115,-19.68579 -43.884115,-43.882931 0,-24.19714 19.685792,-43.882957 43.884115,-43.882957 24.19832,0 43.88412,19.685792 43.88412,43.882933 0,24.197145 -19.6858,43.882955 -43.88412,43.882955 z m 0,-61.483933 c -9.706383,0 -17.602185,7.895777 -17.602185,17.601002 0,9.70525 7.895777,17.601001 17.602185,17.601001 9.70641,0 17.60219,-7.895776 17.60219,-17.601001 0,-9.705225 -7.89581,-17.601002 -17.60219,-17.601002 z" class="c1"/>
+  <path style="font-style:normal;font-weight:normal;font-size:medium;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle;fill:#8422f4;stroke:#8422f4;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" id="path15" stroke-miterlimit="2" d="M 82.397795,124.0531 V 43.712846 c -15.453236,6.798253 -26.28193,22.233846 -26.28193,40.170113 0,17.936271 10.828719,33.371861 26.28193,40.170141 z" class="c2"/>
+
+</g>
+
+
+</svg>

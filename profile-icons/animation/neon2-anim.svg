@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<defs>
+<filter id="filter" x="-50%" y="-50%" width="200%" height="200%">
+	<feOffset result="inner-glow" in="SourceGraphic" dx="0" dy="5" />
+	<feFlood flood-color="#ffffff" result="flood-white" />
+	<feFlood flood-color="#a688fc" result="flood-accent">
+		<animate 
+             attributeName="flood-color"
+             dur="6s" 
+             repeatCount="indefinite"
+             keyTimes="0;
+                       0.25;
+                       0.5;
+                       0.75;
+                       1"
+
+             values="#3b2f4e;
+                     #8422f4;
+                     #7c4efd;
+                     #a688fc; #3b2f4e"/>
+	</feFlood>
+	
+	<feComposite operator="out" in="flood-accent" in2="SourceAlpha" result="comp" />
+	<feMorphology in="comp" result="comp" operator="dilate" radius="4" />
+	<feGaussianBlur in="comp" result="comp" stdDeviation="5" />
+	<feComposite operator="in" in="comp" in2="SourceAlpha" result="comp" />
+	
+	<feComposite operator="in" in="flood-white" in2="SourceAlpha" result="comp2" />
+	<feMorphology in="comp2" result="comp2" operator="erode" radius="3" />
+	<feGaussianBlur in="comp2" result="comp2" stdDeviation="4">
+		<animate attributeName="stdDeviation" values="4;6;4" dur="3s" calcMode="spline"	keySplines=".73 .18 .24 .87; .73 .18 .24 .87;" repeatCount="indefinite" /> 
+	</feGaussianBlur>
+	<feBlend in="comp" in2="comp2" result="output" mode="screen" />
+</filter>
+
+ <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
+</filter> 
+<filter id="glow2" x="-100%" y="-100%" width="300%" height="300%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+</filter>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="4" />
+</filter>
+</defs>
+
+<g transform="translate(20 20) scale(0.8)">
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" fill="#a688fc" stroke="#a688fc" stroke-width="5" filter="url(#glow2)" opacity="0.7" mix-blend-mode="screen">
+<animate 
+             attributeName="fill"
+             dur="6s" 
+             repeatCount="indefinite"
+             keyTimes="0;
+                       0.25;
+                       0.5;
+                       0.75;
+                       1"
+
+             values="#3b2f4e;
+                     #8422f4;
+                     #7c4efd;
+                     #a688fc; #3b2f4e"/>
+					 <animate 
+             attributeName="stroke"
+             dur="6s" 
+             repeatCount="indefinite"
+             keyTimes="0;
+                       0.25;
+                       0.5;
+                       0.75;
+                       1"
+
+             values="#3b2f4e;
+                     #8422f4;
+                     #7c4efd;
+                     #a688fc; #3b2f4e"/>
+</path>
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" fill="#a688fc" stroke="#a688fc" stroke-width="5" filter="url(#glow)" opacity="1" mix-blend-mode="screen">
+<animate 
+             attributeName="fill"
+             dur="6s" 
+             repeatCount="indefinite"
+             keyTimes="0;
+                       0.25;
+                       0.5;
+                       0.75;
+                       1"
+
+             values="#3b2f4e;
+                     #8422f4;
+                     #7c4efd;
+                     #a688fc; #3b2f4e"/>
+					 <animate 
+             attributeName="stroke"
+             dur="6s" 
+             repeatCount="indefinite"
+             keyTimes="0;
+                       0.25;
+                       0.5;
+                       0.75;
+                       1"
+
+             values="#3b2f4e;
+                     #8422f4;
+                     #7c4efd;
+                     #a688fc; #3b2f4e"/>
+</path>
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" transform="translate(3 15)" fill="#000000" stroke="#000000" stroke-width="2" filter="url(#shadow)" opacity="0.3" mix-blend-mode="screen" />
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" fill="#ffffff" filter="url(#filter)" />
+</g>
+</svg>

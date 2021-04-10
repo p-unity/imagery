@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<defs>
+<filter id="plasma" x="-50%" y="-50%" width="200%" height="200%">
+	<feFlood flood-color="#a688fc" result="color-accent"></feFlood>
+	<feFlood flood-color="#fcfcfc" result="color-white"></feFlood>
+	
+	<feTurbulence baseFrequency="0.1" type="fractalNoise" numOctaves="2" seed="1" result="MIDDLE-SPLASH_10"></feTurbulence>
+	<feMorphology in="SourceAlpha" result="MIDDLE-SPLASH_20" operator="dilate" radius="3" />
+	<feGaussianBlur in="MIDDLE-SPLASH_20" stdDeviation="5" result="MIDDLE-SPLASH_20"></feGaussianBlur>
+	<feDisplacementMap in="MIDDLE-SPLASH_20" in2="MIDDLE-SPLASH_10" scale="25" result="MIDDLE-SPLASH_30"></feDisplacementMap>
+	<feComposite in="color-accent" in2="MIDDLE-SPLASH_30" operator="in" result="MIDDLE-SPLASH_40"></feComposite>
+	
+	
+	<feTurbulence baseFrequency="0.15" type="fractalNoise" numOctaves="2" seed="1" result="top-layer"></feTurbulence>
+	<feGaussianBlur in="SourceAlpha" stdDeviation="15" result="top-layer-2"></feGaussianBlur>
+	
+	<feDisplacementMap in="top-layer-2" in2="top-layer" scale="25" result="top-layer-3"></feDisplacementMap>
+	<feComposite in="color-white" in2="top-layer-3" operator="in" result="top-layer-4"></feComposite>
+	<feMorphology in="top-layer-4" result="top-layer-4" operator="erode" radius="2" />
+	<feComponentTransfer in="top-layer-4" result="top-layer-4">
+	<feFuncA type="table" tableValues="0 .5 0 .3 0" />
+	</feComponentTransfer>
+	<feComposite in="color-white" in2="top-layer-4" operator="in" result="top-layer-4"></feComposite>
+	<feBlend in="MIDDLE-SPLASH_40" in2="top-layer-4" result="output" mode="screen" />
+</filter>
+</defs>
+<g transform="translate(20 20) scale(0.8)">
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" fill="#ffffff" filter="url(#plasma)" />
+</g>
+</svg>

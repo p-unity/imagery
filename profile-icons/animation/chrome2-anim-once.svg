@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0" y2="100%">
+      <stop offset="0%" stop-color="#535b5e" />
+      <stop offset="27%" stop-color="#d6d6d6" />
+      <stop offset="51%" stop-color="#4a5154" />
+      <stop offset="53%" stop-color="#fdfdfd" />
+      <stop offset="73%" stop-color="#b0b0b0" />
+      <stop offset="100%" stop-color="#535b5e" />
+    </linearGradient>
+	<linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#535b5e" />
+      <stop offset="25%" stop-color="#fefefe" />
+      <stop offset="50%" stop-color="#636b6d" />
+      <stop offset="75%" stop-color="#fdfdfd" />
+      <stop offset="100%" stop-color="#535b5e" />
+
+    </linearGradient>
+  <filter id="chrome">
+
+	<!-- inner glow -->
+	<feOffset result="inner-glow" in="SourceGraphic" dx="0" dy="20" />
+	<feFlood flood-color="#ffffff" result="flood-white" />
+	<feComposite operator="out" in="flood-white" in2="SourceAlpha" result="comp" />
+	<feOffset result="comp" in="comp" dx="0" dy="4" />
+	<feMorphology in="comp" result="comp" operator="dilate" radius="2" />
+	<feGaussianBlur in="comp" result="comp" stdDeviation="2" />
+	<feComposite operator="in" in="comp" in2="SourceAlpha" result="comp" />
+    <feBlend in="SourceGraphic" in2="comp" mode="screen" />
+	
+	<!-- bevel -->
+	<feGaussianBlur stdDeviation="2" in="SourceAlpha" result="bumpMap"/>
+	<feMorphology in="bumpMap" result="bumpMap" operator="erode" radius="2" />
+	
+	<feDiffuseLighting in="bumpMap" 
+					  surfaceScale="1"
+					  diffuseConstant="3"
+					  result="shading">
+		<fePointLight id="light" x="0" y="0" z="20">
+		<animate attributeName="x" values="0;200;0" dur="5s" calcMode="spline"
+						keySplines=".73 .18 .24 .87;
+									.73 .18 .24 .87;" repeatCount="1" />
+		</fePointLight>
+	  </feDiffuseLighting>
+	<feBlend in="flood-white" in2="shading" mode="multiply" result="comp2" />
+	<feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1" />
+	<feMorphology in="blur" result="blur" operator="erode" radius="7" />
+	<feComposite operator="in" in="comp2" in2="blur" result="comp2" />
+	
+	<feBlend in="comp2" in2="comp" result="output" mode="screen" />
+	<feBlend in="output" in2="SourceGraphic" result="output" mode="multiply" />
+	<feGaussianBlur in="output" result="output" stdDeviation="1" />
+	<feComposite operator="in" in="output" in2="SourceAlpha" result="output" />
+  </filter>
+  
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+</filter>
+</defs>
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" transform="translate(3 5)" fill="#000000" stroke="#000000" stroke-width="2" filter="url(#shadow)" opacity="0.7">
+<animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="translate"
+                          from="2 5"
+                          to="2 5"
+						  values="2 5; -2 5; 2 5" dur="5s" calcMode="spline"	keySplines=".73 .18 .24 .87; .73 .18 .24 .87;" repeatCount="indefinite" />
+</path>
+
+<path d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" fill="url(#gradient1)" stroke="url(#gradient2)" stroke-width="2" filter="url(#chrome)" />
+</svg>

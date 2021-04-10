@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<defs>
+<filter id="noise" x="-50%" y="-50%" width="200%" height="200%">
+  <feFlood flood-color="#000000" result="black"></feFlood>
+  <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+  <feTurbulence baseFrequency="0.6" type="fractalNoise" numOctaves="2" seed="1" result="cloud"></feTurbulence>
+  
+  <feColorMatrix in="cloud" type="luminanceToAlpha" result="cloud" />
+  <feComponentTransfer in="cloud" result="cloud">
+	<feFuncA type="table" tableValues="0 1 0 1 0" />
+	</feComponentTransfer>
+  <feComposite in="SourceGraphic" in2="cloud" operator="in" result="output"></feComposite>
+</filter>
+</defs>
+
+<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+	<stop  offset="0" style="stop-color:#aaaaaa"/>
+	<stop  offset="1" style="stop-color:#000000"/>
+</linearGradient>
+
+<path fill="#ffffff" d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" />
+<path fill="url(#gradient)" d="m100 40c-6.2578 0-12.21 1.3248-17.602 3.6953v-1.881h-26.283v118.19h26.283v-35.93c5.3918 2.3706 11.344 3.6953 17.602 3.6953 24.198 0 43.885-19.686 43.885-43.883s-19.686-43.883-43.885-43.883zm0 26.281c9.7064 0 17.602 7.8963 17.602 17.602 0 9.7052-7.8952 17.602-17.602 17.602-9.7064 0-17.602-7.8963-17.602-17.602 0-9.7052 7.8952-17.602 17.602-17.602z" filter="url(#noise)" />
+</svg>

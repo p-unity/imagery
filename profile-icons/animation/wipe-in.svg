@@ -1,0 +1,54 @@
+<svg version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve">
+<style>
+.clip{
+  animation: slide 8s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: matrix(1.7, 0, 0, 1.7, 0, -200);
+  }
+  50% {
+    transform: matrix(1.7, 0, 0, 1.7, 0, 0);
+  }
+  to {
+    transform: matrix(1.7, 0, 0, 1.7, 0, -200);
+  }
+}
+</style>
+
+<defs>
+    <clipPath id="circle-clip">
+      <path class="clip" d="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+	c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z" transform="matrix(8.6, 0, 0, 6, 0, 0)">
+        <animate id="morph-one" dur="1" begin="0" repeatCount="indefinite" attributeName="d" from="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+	c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z" to="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+	c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z" values="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+	c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z;M101.807,135.303c10-0.352,18.193-6.531,18.193-6.531V0H0v128.771c0,0,9.701,4.952,17.069,4.952s10.464-9.299,20.877-9.299
+	c10.175,0,12.703,9.299,22.053,9.299s11.981-9.123,20.578-9.123S91.807,135.654,101.807,135.303z
+;M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,17.069-5.227s10.464,6.314,20.877,6.314
+	c10.175,0,12.703-4.209,22.053-4.209s11.981,5.438,20.578,5.438S91.807,123.722,101.807,123.37z" />
+
+      </path>
+    </clipPath>
+  </defs>
+<g clip-path="url(#circle-clip)">
+
+  
+  <defs id="defs66351"/>
+  <linearGradient id="3d_gradient2-logo-11ee6763-d95f-4fbd-9fe3-395525a7d8fe" x1="30%" y1="120%" x2="-10%" y2="30%" spreadMethod="pad">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" id="stop66328"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="1" id="stop66330"/>
+  </linearGradient>
+  <linearGradient id="3d_gradient3-logo-11ee6763-d95f-4fbd-9fe3-395525a7d8fe" x1="30%" y1="120%" x2="-10%" y2="30%" spreadMethod="pad" gradientTransform="rotate(-30)">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" id="stop66333"/>
+    <stop offset="50%" stop-color="#cccccc" stop-opacity="1" id="stop66335"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="1" id="stop66337"/>
+  </linearGradient>
+  <rect style="font-style:normal;font-weight:normal;font-size:medium;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle;fill:#7c4efd;stroke:#7c4efd;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" id="rect11" stroke-miterlimit="2" height="118.1847" width="26.281931" class="c3" y="41.815296" x="56.115856"/>
+  <path style="font-style:normal;font-weight:normal;font-size:medium;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle;fill:#3b2f4e;stroke:#3b2f4e;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" id="path13" stroke-miterlimit="2" d="m 99.99998,127.76589 c -24.198323,0 -43.884115,-19.68579 -43.884115,-43.882931 0,-24.19714 19.685792,-43.882957 43.884115,-43.882957 24.19832,0 43.88412,19.685792 43.88412,43.882933 0,24.197145 -19.6858,43.882955 -43.88412,43.882955 z m 0,-61.483933 c -9.706383,0 -17.602185,7.895777 -17.602185,17.601002 0,9.70525 7.895777,17.601001 17.602185,17.601001 9.70641,0 17.60219,-7.895776 17.60219,-17.601001 0,-9.705225 -7.89581,-17.601002 -17.60219,-17.601002 z" class="c1"/>
+  <path style="font-style:normal;font-weight:normal;font-size:medium;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle;fill:#8422f4;stroke:#8422f4;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:2" id="path15" stroke-miterlimit="2" d="M 82.397795,124.0531 V 43.712846 c -15.453236,6.798253 -26.28193,22.233846 -26.28193,40.170113 0,17.936271 10.828719,33.371861 26.28193,40.170141 z" class="c2"/>
+
+</g>
+
+</svg>
